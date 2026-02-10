@@ -1,8 +1,16 @@
 {
     "name": "giannels/test-result-laravel",
     "autoload": {
-        "psr-4": {
-            "Nelson\\ExportTest\\": "src/"
+    "psr-4": {
+        "giannels\\TestResultLaravel\\": "src/"
+        }
+    },
+    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "giannels\\TestResultLaravel\\TestResultServiceProvider"
+            ]
         }
     },
 
