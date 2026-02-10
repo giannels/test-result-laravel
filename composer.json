@@ -1,5 +1,7 @@
 {
     "name": "giannels/test-result-laravel",
+    "description": "Package untuk export hasil test Laravel ke PDF",
+    "license": "MIT",
     "autoload": {
     "psr-4": {
         "giannels\\TestResultLaravel\\": "src/"
@@ -16,7 +18,6 @@
 
     "require": {
         "barryvdh/laravel-dompdf": "^2.0",
-        "php": "^8.0",
-        "giannels/test-result-laravel": "^1.2"
+        "php": "^8.0"
     }
 }
