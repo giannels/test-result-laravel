@@ -5,17 +5,11 @@
             "Nelson\\ExportTest\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Nelson\\ExportTest\\Providers\\ExportTestServiceProvider"
-            ]
-        }
-    },
     "require": {
         "barryvdh/laravel-dompdf": "^2.0"
     }
 
 }
+
 
 
