@@ -9,7 +9,6 @@ Ikuti langkah-langkah di bawah ini untuk mengintegrasikan paket ke dalam proyek 
 1. Install via Composer
 Buka terminal dan jalankan perintah berikut:
 
-Bash
 composer require giannels/test-result-laravel
 
 2. Registrasi Service Provider
@@ -30,6 +29,7 @@ Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi And
 
 Bash
 php artisan view:clear
+
 php artisan config:clear
 
 
