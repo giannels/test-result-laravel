@@ -32,7 +32,7 @@ Bash
 'php artisan config:clear'
 
 
-🚀 Cara Penggunaan
+# 🚀 Cara Penggunaan
 Menjalankan Test & Export
 Untuk menjalankan seluruh test sekaligus mengekspor hasilnya, cukup jalankan satu perintah:
 php artisan test:export
@@ -48,7 +48,7 @@ Preview PDF: Buka browser dan akses http://127.0.0.1:8000/test-result/preview.
 Download PDF: Akses http://127.0.0.1:8000/test-result/download.
 
 
-📊 Fitur Utama
+# 📊 Fitur Utama
 ✅ Auto-Parsing: Mengubah output terminal PHPUnit yang rumit menjadi data JSON yang rapi.
 ✅ Visual Report: Menghasilkan laporan PDF yang cantik menggunakan DomPDF.
 ✅ Summary Stats: Menampilkan statistik Passed, Failed, dan Risky secara instan.
