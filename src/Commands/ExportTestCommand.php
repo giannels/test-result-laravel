@@ -197,5 +197,16 @@ class ExportTestCommand extends Command
         
         $this->newLine();
         $this->comment('🔗 Periksa folder storage/app/testing/ untuk hasil JSON.');
+        
+        $this->newLine();
+        $baseUrl = config('app.url');
+        // Fix localhost URL jika perlu
+        if (str_contains($baseUrl, 'localhost')) {
+            $baseUrl = 'http://127.0.0.1:8000';
+        }
+
+        $this->comment('🔗 Available URLs:');
+        $this->line('  📄 Preview PDF: ' . $baseUrl . '/test-result/preview');
+        $this->line('  📄 Download PDF: ' . $baseUrl . '/test-result/download');
     }
 }
