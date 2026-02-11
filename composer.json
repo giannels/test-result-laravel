@@ -1,10 +1,11 @@
 {
     "name": "giannels/test-result-laravel",
+    "license": "MIT",
     "description": {
         "Package untuk export hasil test Laravel ke PDF",
-        "README : https://github.com/giannels/test-result-laravel"
+        "README" : "https://github.com/giannels/test-result-laravel"
     },
-    "license": "MIT",
+    
     
     "autoload": {
     "psr-4": {
