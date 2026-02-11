@@ -206,31 +206,15 @@
             Detail: {{ $category }} ({{ count($tests) }} tests)
         </div>
         <table>
-            <thead>
-                <tr>
-                    <th style="width: 5%;">No</th>
-                    <th style="width: 50%;">Test Name</th>
-                    <th style="width: 15%;">Status</th>
-                    <th style="width: 15%;">Time</th>
-                    <th style="width: 15%;">Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($tests as $test)
-                <tr>
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ $test['name'] ?? '-' }}</td>
-                    <td class="status-{{ strtolower($test['status'] ?? 'unknown') }}">
-                        {{ $test['status'] ?? 'Unknown' }}
-                    </td>
-                    <td>{{ $test['time'] ?? '-' }}</td>
-                    <td style="font-size: 8px;">{{ $test['message'] ?? '-' }}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+            </table>
+
+        {{-- Hanya berikan page-break jika BUKAN tabel terakhir --}}
+        @if(!$loop->last)
+            <div class="page-break"></div>
+        @endif
     @endforeach
 
+    {{-- Footer diletakkan langsung di bawah tabel terakhir --}}
     <div class="footer">
         <p><strong>Universal Automated Testing Report</strong></p>
         <p>This document is an automated output of the system test suite.</p>
