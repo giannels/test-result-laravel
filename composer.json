@@ -19,5 +19,6 @@
     "require": {
         "barryvdh/laravel-dompdf": "^2.0",
         "php": "^8.0"
+        "illuminate/laravel": "^9.0"
     }
 }
