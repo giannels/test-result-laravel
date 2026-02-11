@@ -12,6 +12,12 @@ Buka terminal dan jalankan perintah berikut:
 composer require giannels/test-result-laravel
 ```
 
+atau jika tidak bisa, menggunakan
+
+```bash
+composer require giannels/test-result-laravel:dev-main
+```
+
 
 2. Registrasi Service Provider
 Buka file config/app.php dan tambahkan TestResultServiceProvider ke dalam array providers. Langkah ini memastikan Laravel mengenali perintah dan rute dari paket ini.
