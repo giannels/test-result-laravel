@@ -24,6 +24,7 @@ PHP
     Giannels\TestResultLaravel\TestResultServiceProvider::class,
 ])->toArray(),
 
+
 3. Refresh Konfigurasi
 Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi Anda:
 
@@ -42,9 +43,7 @@ Melihat Hasil Laporan
 Setelah perintah selesai dijalankan, Anda dapat mengakses laporan dalam beberapa format:
 
 JSON: File akan tersimpan di storage/app/testing/test-results.json.
-
 Preview PDF: Buka browser dan akses http://127.0.0.1:8000/test-result/preview.
-
 Download PDF: Akses http://127.0.0.1:8000/test-result/download.
 
 
@@ -55,6 +54,6 @@ Download PDF: Akses http://127.0.0.1:8000/test-result/download.
 ✅ Category Grouping: Hasil test dikelompokkan berdasarkan Class untuk memudahkan pembacaan.
 
 
-📝 Lisensi
+# 📝 Lisensi
 Paket ini bersifat open-source.
 Dibuat oleh Giannels
