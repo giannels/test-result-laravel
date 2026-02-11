@@ -111,13 +111,15 @@
         .status-risky  { color: #e67e22; font-weight: bold; }
         
         .footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 9px;
-            color: #7f8c8d;
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
+        width: 100%;
+        margin-top: 50px; /* Jarak aman dari tabel terakhir */
+        text-align: center;
+        font-size: 9px;
+        color: #7f8c8d;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
         }
+
         .page-break {
             page-break-after: always;
         }
