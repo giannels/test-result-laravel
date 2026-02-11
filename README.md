@@ -9,12 +9,14 @@ Ikuti langkah-langkah di bawah ini untuk mengintegrasikan paket ke dalam proyek 
 1. Install via Composer
 Buka terminal dan jalankan perintah berikut:
 
+'''bash
 composer require giannels/test-result-laravel
+'''
 
 2. Registrasi Service Provider
 Buka file config/app.php dan tambahkan TestResultServiceProvider ke dalam array providers. Langkah ini memastikan Laravel mengenali perintah dan rute dari paket ini.
 
-<?php
+php
 'providers' => ServiceProvider::defaultProviders()->merge([
     // ... Provider lainnya
     
@@ -23,7 +25,7 @@ Buka file config/app.php dan tambahkan TestResultServiceProvider ke dalam array 
      */
     Giannels\TestResultLaravel\TestResultServiceProvider::class,
 ])->toArray(),
-?>
+
 
 3. Refresh Konfigurasi
 Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi Anda:
